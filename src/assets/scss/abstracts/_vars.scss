@@ -1,0 +1,33 @@
+@import "./mixins";
+
+// Colors
+$accentColor: #FC9B09;
+$primaryColor: #fff;
+$secondaryColor: #C7C7C7;
+$textColor: #37373F;
+$textColorLight: #B3B3B3;
+$linkColor: #5286EC;
+
+$breakpoints: (
+        xs:576px,
+        sm:768px,
+        md:1280px,
+        lg:1440px,
+);
+
+%container {
+  padding: 0 15px;
+  width: 100%;
+  @include media(xs){
+    padding: 0 35px;
+  }
+  @include media(sm){
+    padding: 0 50px;
+  }
+  @include media(md){
+    padding: 0;
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+}
+
