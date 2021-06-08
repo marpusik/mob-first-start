@@ -1,0 +1,17 @@
+.slider {
+  .container {
+    @extend %container;
+  }
+  &__list {
+    display: flex;
+    padding-top: 40px;
+    overflow: auto;
+  }
+  &__item {
+    flex-basis: 20%;
+    min-width: 277px;
+  }
+  &__img {
+    width: 90%;
+}
+}

@@ -1,0 +1,98 @@
+.session {
+  .container {
+    @extend %container;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__title {
+    @include text(28px, 400, inherit, inherit);
+    text-align: center;
+    max-width: 186px;
+    margin: 39px -124px 13px 16px;
+  }
+
+  &__item {
+    @include text(14px, 400, inherit, inherit);
+    margin-top: 30px;
+  }
+
+  &__time, &__photo, &__city, &__question, &__rating {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+  }
+  .time, .photo, .city, .question, .rating__win {
+    padding-right: 11px;
+  }
+
+  &__rating{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
+
+  &__line{
+    width: 290px;
+    border: 0.5px solid #C7C7C7;
+    margin-top: 38px;
+  }
+
+  //noinspection CssUnknownTarget
+  @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+  fieldset, label {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    margin: 20px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    margin: 10px;
+  }
+
+  .rating {
+    border: none;
+    float: left;
+  }
+
+  .rating > input {
+    display: none;
+  }
+
+  .rating > label:before {
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome, serif;
+    display: inline-block;
+    content: "\f005";
+  }
+
+  .rating > .half:before {
+    content: "\f089";
+    position: absolute;
+  }
+
+  .rating > label {
+    color: #ddd;
+    float: right;
+  }
+
+  .rating > input:checked ~ label, /* show gold star when clicked */
+  .rating:not(:checked) > label:hover, /* hover current star */
+  .rating:not(:checked) > label:hover ~ label {
+    color: #FFD700;
+  }
+
+  .rating > input:checked + label:hover, /* hover current star when changing rating */
+  .rating > input:checked ~ label:hover,
+  .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+  .rating > input:checked ~ label:hover ~ label {
+    color: #FFED85;
+  }
+}

@@ -1,0 +1,15 @@
+.reserve {
+  .container {
+    @extend %container;
+  }
+  .table {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    border-collapse: collapse;
+  }
+  .table th {
+    padding: 5px;
+    border: 1px solid #dddddd;
+  }
+}

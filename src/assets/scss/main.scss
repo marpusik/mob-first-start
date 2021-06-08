@@ -15,5 +15,11 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+@import "./node_modules/node-normalize-scss/reseter.css";
 @import "./header";
 @import "./main-block";
+@import "./session";
+@import "./slider";
+@import "./photographer";
+@import "./reserve";
+@import "./reviews";
