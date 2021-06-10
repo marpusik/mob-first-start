@@ -1,5 +1,37 @@
-.photographer {
+.photo {
   .container {
     @extend %container;
+  }
+
+  &__info {
+    text-align: center;
+  }
+
+  &__img {
+    margin: 50px 0 23px 70px;
+  }
+
+  &__name {
+    @include text(18px, 500, inherit, inherit);
+  }
+
+  &__title {
+    padding: 7px 0;
+    @include text(14px, 400, inherit, inherit);
+  }
+
+  &__link {
+    max-width: 259px;
+    margin: auto;
+  }
+  &__article {
+    @include text(16px, 400, 24px, inherit);
+  }
+}
+
+.article {
+  &__span {
+    padding: 25px 0 15px 0;
+    @include text(18px, 500, inherit, inherit);
   }
 }
