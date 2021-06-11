@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet"
+          href="assets/css/style.min.css">
+    <style type="text/css">
+        .slider {
+            width: 50%;
+            margin: 100px auto;
+        }
+
+        .slick-slide {
+            margin: 0px 20px;
+        }
+
+        .slick-slide img {
+            width: 100%;
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            color: black;
+        }
+
+
+        .slick-slide {
+            transition: all ease-in-out .3s;
+            opacity: .2;
+        }
+
+        .slick-active {
+            opacity: .5;
+        }
+
+        .slick-current {
+            opacity: 1;
+        }
+    </style>
+    <title>gulp project</title>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__wrapper">
+                <img src="./assets/images/logo.svg"
+                     alt=""
+                     class="header__logo">
+                <a href="tel:88001231212"
+                   class="header__phone-city">Москва</a>
+                <div class="header__phone">
+                    <span>Телефон:</span>
+                    <a href="tel:88001231212"
+                       class="header__phone-link">8(800)-123-12-12</a>
+                </div>
+            </div>
+            <a href=""
+               class="header__user">
+                <img src="./assets/images/user.png"
+                     alt=""
+                     class="header__user-icon">
+            </a>
+        </div>
+    </div>
+</header>
+<section class="main">
+    <div class="container">
+        <div class="main__inner">
+            <h1 class="main__title">Эксклюзивная <span>фотосессия</span> при полете на вертолете</h1>
+            <div class="main__price-box">
+                <div class="main__wrapper">
+                    <span class="main__price-label">Стоимость:</span>
+                    <span class="main__price">1500₽</span>
+                </div>
+                <img class="main__percent"
+                     src="./assets/images/percent.svg"
+                     alt="percent"/>
+            </div>
+            <button class="main__btn btn">Забронировать место</button>
+        </div>
+    </div>
+</section>
+<section class="session">
+    <div class="container">
+        <h2 class="session__title">Фотосессия в вертолете</h2>
+        <img class="session__img"
+             src="./assets/images/session.jpg"
+             alt="">
+        <p class="session__item">Полет на вертолете это прекрасная возможность получить новые ощущения! А наш
+            замечательный фотограф запечатлит лучшие моменты!</p>
+        <div class="session__result">
+            <div class="session__time">
+                <img class="time"
+                     src="./assets/images/time.svg"
+                     alt="">
+                <div class="item">3 часа съемки</div>
+            </div>
+            <div class="session__photo">
+                <img class="photo"
+                     src="./assets/images/photo.svg"
+                     alt="">
+                <div class="item">Более 50 фотографий</div>
+            </div>
+            <div class="session__city">
+                <img class="city"
+                     src="./assets/images/city.svg"
+                     alt="">
+                <div class="item">Москва</div>
+            </div>
+            <div class="session__question">
+                <img class="time"
+                     src="./assets/images/question.svg"
+                     alt="">
+                <div class="item">Готовы ответить на любые вопросы</div>
+            </div>
+        </div>
+        <div class="session__line"></div>
+        <div class="session__rating">
+            <div class="rating__win"><img class="win"
+                                          src="./assets/images/win.svg"
+                                          alt=""></div>
+            <div class="rating__item">
+                <div class="item">Более 150 отзывов с оценкой</div>
+            </div>
+            <div class="rating__star">
+                <fieldset class="rating">
+                    <input type="radio"
+                           id="star5"
+                           name="rating"
+                           value="5"/><label class="full"
+                                             for="star5"
+                                             title="Awesome - 5 stars"></label>
+                    <input type="radio"
+                           id="star4half"
+                           name="rating"
+                           value="4 and a half"/><label class="half"
+                                                        for="star4half"
+                                                        title="Pretty good - 4.5 stars"></label>
+                    <input type="radio"
+                           id="star4"
+                           name="rating"
+                           value="4"/><label class="full"
+                                             for="star4"
+                                             title="Pretty good - 4 stars"></label>
+                    <input type="radio"
+                           id="star3half"
+                           name="rating"
+                           value="3 and a half"/><label class="half"
+                                                        for="star3half"
+                                                        title="Meh - 3.5 stars"></label>
+                    <input type="radio"
+                           id="star3"
+                           name="rating"
+                           value="3"/><label class="full"
+                                             for="star3"
+                                             title="Meh - 3 stars"></label>
+                    <input type="radio"
+                           id="star2half"
+                           name="rating"
+                           value="2 and a half"/><label class="half"
+                                                        for="star2half"
+                                                        title="Kinda bad - 2.5 stars"></label>
+                    <input type="radio"
+                           id="star2"
+                           name="rating"
+                           value="2"/><label class="full"
+                                             for="star2"
+                                             title="Kinda bad - 2 stars"></label>
+                    <input type="radio"
+                           id="star1half"
+                           name="rating"
+                           value="1 and a half"/><label class="half"
+                                                        for="star1half"
+                                                        title="Meh - 1.5 stars"></label>
+                    <input type="radio"
+                           id="star1"
+                           name="rating"
+                           value="1"/><label class="full"
+                                             for="star1"
+                                             title="Sucks big time - 1 star"></label>
+                    <input type="radio"
+                           id="starhalf"
+                           name="rating"
+                           value="half"/><label class="half"
+                                                for="starhalf"
+                                                title="Sucks big time - 0.5 stars"></label>
+                </fieldset>
+            </div>
+        </div>
+        <div class="session__line"></div>
+    </div>
+</section>
+<section class="sliders">
+    <div class="container">
+        <h2 class="session__title">Фотографии пакета</h2>
+        <div class="sliders__list">
+            <div class="sliders__item"><img class="sliders__img"
+                                           src="./assets/images/slider.png"
+                                           alt=""></div>
+            <div class="sliders__item"><img class="sliders__img"
+                                           src="./assets/images/slider.png"
+                                           alt=""></div>
+            <div class="sliders__item"><img class="sliders__img"
+                                           src="./assets/images/slider.png"
+                                           alt=""></div>
+            <div class="sliders__item"><img class="sliders__img"
+                                           src="./assets/images/slider.png"
+                                           alt=""></div>
+            <div class="sliders__item"><img class="sliders__img"
+                                           src="./assets/images/slider.png"
+                                           alt=""></div>
+        </div>
+    </div>
+</section>
+<section class="photographer photo">
+    <div class="container">
+        <div class="photo__info">
+            <img class="photo__img"
+                 src="./assets/images/photoimg.png"
+                 alt="">
+            <h4 class="photo__name">Марина Иванова</h4>
+            <h5 class="photo__title">Фотограф</h5>
+            <div class="photo__link">
+                <a class="link"
+                   href="#">Показать больше информации о фотографе</a>
+            </div>
+        </div>
+        <div class="photo__article">
+            <p class="article__item">
+            <div class="article__span">
+                <span class="span">Об организаторе:</span><br>
+            </div>
+            <div class="article__one">
+                Всем привет! Я фотограф Мария! И по мимо фотосъемки я так же являюсь членом группы экспертов
+                туристической отрасли, которые хорошо разбираются
+                в маркетинге, операциях
+                и услугах обслуживания клиентов, специализирующихся
+                на совместном использовании
+                и частных турах.
+            </div>
+            <div class="article__two">
+                Сначала мы (я и моя команда) изучаем интересы клиентов, а затем придумываем подходящее решение, которое
+                соответствует бюджету и планам клиента.
+                Мы никогда не зависим
+                от субпоставщиков
+                и не свяжемся…
+            </div>
+            <a href="#">Читать еще </a>
+            <span class="article__span">Что я предоставлю:</span>
+            Встречу вас на машине после длительного перелёта.
+            Качественный подбор места
+            и локации для вашей съемки.
+            При необходимости всегда возможно прерваться
+            на обед/ужин.
+            Более 50 фотографий на выходе
+            с обработкой и замечательные впечатления о Дубае!
+            <a href="#">Читать еще </a>
+            <p>
+        </div>
+    </div>
+</section>
+<section class="reserve">
+    <div class="container">
+        <h2 class="session__title">Доступная съемка в ближайщее время</h2>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Пятница, 14 сентября</th>
+            </tr>
+            <tr>
+                <th>15:00 - 18:00 <span>850$</span> Осталось — 1 место
+                    <button>Выбрать</button>
+                </th>
+            </tr>
+            <tr>
+                <th>15:00 - 18:00 <span>850$</span> Осталось — 1 место
+                    <button>Выбрать</button>
+                </th>
+            </tr>
+            <tr>
+                <th><img class="table__rating"
+                         src="./assets/images/table__rating.svg"
+                         alt=""></th>
+            </tr>
+            </thead>
+        </table>
+    </div>
+</section>
+<section class="maps">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2352.390724752965!2d27.530713714587367!3d53.87148134294912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbd03c80f489e7%3A0xaef1fdab1ac80f5!2z0JDRjdGA0L7QtNGA0L7QvNC90LDRjyDRg9C7LiAzLCDQnNC40L3RgdC6!5e0!3m2!1sru!2sby!4v1622979247578!5m2!1sru!2sby"
+            width="100%"
+            height="600"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"></iframe>
+</section>
+<section class="lazy slider" data-sizes="50vw">
+    <div>
+        <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="http://placehold.it/650x300?text=1-650w 650w, http://placehold.it/960x300?text=1-960w 960w" data-sizes="100vw">
+    </div>
+    <div>
+        <img data-lazy="http://placehold.it/350x300?text=2-350w" data-srcset="http://placehold.it/650x300?text=2-650w 650w, http://placehold.it/960x300?text=2-960w 960w" data-sizes="100vw">
+    </div>
+    <div>
+        <img data-lazy="http://placehold.it/350x300?text=3-350w"  data-srcset="http://placehold.it/650x300?text=3-650w 650w, http://placehold.it/960x300?text=3-960w 960w" data-sizes="100vw">
+    </div>
+</section>
+<section class="reviews">
+    <div class="container">
+        <h2 class="session__title">Отзывы</h2>
+        <div class="reviews__valerija">
+            <img class="valerija__photo"
+                 src="./assets/images/valerija__photo.svg"
+                 alt="">
+            <img class="valerija__like"
+                 src="./assets/images/valerija__like.svg"
+                 alt="">
+            <p class="valerija__item">
+                Хотим выразить огромную благодарность вашей компании! Получили море ощущений, все прошло просто
+                замечательно. Фотки получились великолепные, отдельное спасибо фотографу!
+            </p>
+            <time class="valerija__time"
+                  datetime="2019-04-27">27 Апреля, 2019г.
+            </time>
+            <div class="session__line"></div>
+        </div>
+        <div class="reviews__vitalij">
+            <img class="vitalij__photo"
+                 src="./assets/images/vitalij__photo.svg"
+                 alt="">
+            <img class="vitalij__like"
+                 src="./assets/images/vitalij__like.svg"
+                 alt="">
+            <p class="vitalij__item">
+                Восторг! :) Очень понравилось :) Захватили последний теплый, солнечный октябрьский день :) Впечатлило
+                всё: сам вертолет, взлет, полёт, приземление.
+                Организация полёта отличная. Спасибо!</p>
+            <time class="vitalij__time"
+                  datetime="2019-04-19">19 Апреля, 2019г.
+            </time>
+            <div class="session__line"></div>
+        </div>
+        <a href="#">Показать Все (134)</a>
+    </div>
+</section>
+<section class="footer">
+    <div class="container">
+        <div class="footer__logo">
+            <img class="logo"
+                 src="./assets/images/footer__logo.svg"
+                 alt="">
+        </div>
+        <div class="footer__social">
+            <img class="social"
+                 src="./assets/images/footer__social.svg"
+                 alt="">
+        </div>
+        <div class="session__line"></div>
+        <div class="footer__pay">
+            <img class="pay"
+                 src="./assets/images/footer__pay.svg"
+                 alt="">
+        </div>
+        <div class="footer__lang">
+            <label>
+                <select class="lang">
+                    <option>RU</option>
+                    <option>EN</option>
+                </select>
+            </label>
+        </div>
+        <span class="footer__rights">Тех. поддержка: 8(800)700-00-00 © 2018 HELYFLY. All Rights Reserved.</span>
+    </div>
+</section>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="assets/js/script.js"></script>
+<script type="text/javascript">
+    $(document).on('ready', function() {
+        $(".vertical-center-4").slick({
+            dots: true,
+            vertical: true,
+            centerMode: true,
+            slidesToShow: 4,
+            slidesToScroll: 2
+        });
+        $(".vertical-center-3").slick({
+            dots: true,
+            vertical: true,
+            centerMode: true,
+            slidesToShow: 3,
+            slidesToScroll: 3
+        });
+        $(".vertical-center-2").slick({
+            dots: true,
+            vertical: true,
+            centerMode: true,
+            slidesToShow: 2,
+            slidesToScroll: 2
+        });
+        $(".vertical-center").slick({
+            dots: true,
+            vertical: true,
+            centerMode: true,
+        });
+        $(".vertical").slick({
+            dots: true,
+            vertical: true,
+            slidesToShow: 3,
+            slidesToScroll: 3
+        });
+        $(".regular").slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3
+        });
+        $(".center").slick({
+            dots: true,
+            infinite: true,
+            centerMode: true,
+            slidesToShow: 5,
+            slidesToScroll: 3
+        });
+        $(".variable").slick({
+            dots: true,
+            infinite: true,
+            variableWidth: true
+        });
+        $(".lazy").slick({
+            lazyLoad: 'ondemand', // ondemand progressive anticipated
+            infinite: true
+        });
+    });
+</script>
+</body>
+</html>
